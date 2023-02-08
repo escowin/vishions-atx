@@ -8,16 +8,20 @@ header {
     padding: 0 .25rem;
 }
 
-header .icon {
-    margin-left: .5rem;
-    color: var(--overlay);
+.contact .icon {
+       margin-left: .45rem;
 }
 
 .hours {
     display: grid;
-    grid-template-columns: auto 1fr;
-    gap: .125rem .25rem;
+    grid-template-columns: auto 1fr auto;
+    gap: .125rem .45rem;
     font-size: 80%;
+}
+
+.hours-icon {
+    grid-column: 3 / 3;
+    grid-row: 1 / span 2;
 }
 
 .info {
@@ -25,7 +29,10 @@ header .icon {
     flex-direction: column;
     align-items: flex-end;
     text-align: end;
-    gap: .25rem;
+}
+
+.info .icon {
+    color: var(--overlay);
 }
 
 .logo {
@@ -48,4 +55,37 @@ header .icon {
 
 nav {
     grid-column: span 2;
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        --size: 15vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contact {
+        display: flex;
+        gap: 1rem;
+    }
+
+    header {
+        align-items: flex-end;
+    }
+
+    .info {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .logo {
+        --size: 15vh;
+        grid-row: span 2;
+    }
+
+    nav {
+        grid-column: span 1;
+    }
 }
