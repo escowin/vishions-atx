@@ -20,7 +20,7 @@ $ npm i; npm start;
 ```
 
 ## Code
-- Languages: CSS, Javascript
+- Languages: Javascript, CSS
 - Frameworks: React
 
 ## Screenshots
