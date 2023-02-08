@@ -1,14 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  outline: 1px dotted blue
+  /* outline: 1px dotted blue; */
 }
 
 :root {
   --primary: rgb(147, 143, 143);
-  --secondary: rgb(142, 40, 40);
+  --secondary: rgb(142, 40, 40, .9);
   --tertiary: rgba(38, 38, 41, 0.9);
+  --overlay: rgba(43, 28, 28, 0.65);
   --accent: rgba(155, 151, 151, 0.85);
 }
 
@@ -16,10 +19,10 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: var(--primary);
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-variant: small-caps;
   overflow-y: scroll;
+  background-color: var(--primary);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-variant: small-caps;
 }
 
 main {
@@ -31,8 +34,9 @@ main {
   transition: color 1s;
 }
 
-.link:hover {
-  color: var(--quaternary);
+.link:hover,
+.selected {
+  color: var(--secondary);
 }
 
 ul {

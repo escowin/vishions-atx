@@ -4,26 +4,36 @@ header {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: .5rem;
-    align-items: flex-end;
+    margin: 0 1vw;
+    padding: 0 .25rem;
+}
+
+header .icon {
+    margin-left: .5rem;
+}
+
+.contact {
+    text-align: end;
 }
 
 .logo {
     --size: 20vw;
     width: var(--size);
     height: var(--size);
-    display: flex;
-    align-items: center;
     text-align: center;
-    border-radius: 50%;
+    background-color: var(--overlay);
 }
 
-.navigation {
+.menu {
     display: flex;
     justify-content: space-between;
 }
 
-.navigation li {
-    background-color: var(--primary);
-    color: var(--tertiary);
-    padding: 1vw;
+.menu li {
+    background-color: var(--overlay);
+    padding: .25vw 2vw;
+}
+
+nav {
+    grid-column: span 2;
 }
