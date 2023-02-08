@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMobile, faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import {
+  faMobile,
+  faLocationDot,
+  faClock,
+} from "@fortawesome/free-solid-svg-icons";
 import "./index.css";
 
 function Header({ vishions, setSelectedProduct }) {
-  const navigation = ["gummies", "vapes", "bongs", "smokes"];
+  const navigation = ["smokes", "vapes", "bongs", "gummies"];
   const [selected, setSelected] = useState(null);
 
   function handleClick(category) {
@@ -19,23 +23,38 @@ function Header({ vishions, setSelectedProduct }) {
 
       <section className="info">
         <article className="contact">
-          <p>
-            {vishions.address}
-            <FontAwesomeIcon className="icon" icon={faLocationDot} />
-          </p>
-          <p>
-            {vishions.contact.phone}
-            <FontAwesomeIcon className="icon" icon={faMobile} />
-          </p>
+          <a
+            href={`https://maps.google.com/?q=${vishions.address}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p>
+              {vishions.address}
+              <FontAwesomeIcon className="icon" icon={faLocationDot} />
+            </p>
+          </a>
+          <a className="link" href={`tel:${vishions.contact.phone}`}>
+            <p>
+              {vishions.contact.phone}
+              <FontAwesomeIcon className="icon" icon={faMobile} />
+            </p>
+          </a>
         </article>
 
         <article className="hours">
           {vishions.hours.map((days, i) => (
             <>
-              <p key={`day-${i}`}>{days.day}</p>
-              <p key={`time-${i}`}>{days.time}</p>
+              <p key={`day-${i}`} className="day">
+                {days.day}
+              </p>
+              <p key={`time-${i}`} className="time">
+                {days.time}
+              </p>
             </>
           ))}
+          <p className="hours-icon">
+            <FontAwesomeIcon className="icon" icon={faClock} />
+          </p>
         </article>
       </section>
 
