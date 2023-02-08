@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/vishions-atx/static/css/main.f3991120.css",
-    "main.js": "/vishions-atx/static/js/main.cbeebe0a.js",
+    "main.css": "/vishions-atx/static/css/main.0104e28c.css",
+    "main.js": "/vishions-atx/static/js/main.26cca41c.js",
     "static/js/787.d58e314f.chunk.js": "/vishions-atx/static/js/787.d58e314f.chunk.js",
+    "static/media/background.jpg": "/vishions-atx/static/media/background.1af6c6ff8574dc0f0c9d.jpg",
     "index.html": "/vishions-atx/index.html",
-    "main.f3991120.css.map": "/vishions-atx/static/css/main.f3991120.css.map",
-    "main.cbeebe0a.js.map": "/vishions-atx/static/js/main.cbeebe0a.js.map",
+    "main.0104e28c.css.map": "/vishions-atx/static/css/main.0104e28c.css.map",
+    "main.26cca41c.js.map": "/vishions-atx/static/js/main.26cca41c.js.map",
     "787.d58e314f.chunk.js.map": "/vishions-atx/static/js/787.d58e314f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3991120.css",
-    "static/js/main.cbeebe0a.js"
+    "static/css/main.0104e28c.css",
+    "static/js/main.26cca41c.js"
   ]
 }
