@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/vishions-atx/static/css/main.f3991120.css",
+    "main.js": "/vishions-atx/static/js/main.cbeebe0a.js",
+    "static/js/787.d58e314f.chunk.js": "/vishions-atx/static/js/787.d58e314f.chunk.js",
+    "index.html": "/vishions-atx/index.html",
+    "main.f3991120.css.map": "/vishions-atx/static/css/main.f3991120.css.map",
+    "main.cbeebe0a.js.map": "/vishions-atx/static/js/main.cbeebe0a.js.map",
+    "787.d58e314f.chunk.js.map": "/vishions-atx/static/js/787.d58e314f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f3991120.css",
+    "static/js/main.cbeebe0a.js"
+  ]
+}
