@@ -1,8 +1,14 @@
 import "./index.css";
 
-function Footer() {
+function Footer({vishions}) {
+    let date = new Date().getFullYear();
+    // console.log(`
+    // \u00A9 ${date} Edwin M. Escobar
+    // https://github.com/escowin/vishions-atx
+    // `)
+
     return (
-        <footer>footer</footer>
+        <footer>&copy;{date} {vishions.name}</footer>
     )
 }
 

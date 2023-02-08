@@ -10,10 +10,22 @@ header {
 
 header .icon {
     margin-left: .5rem;
+    color: var(--overlay);
 }
 
-.contact {
+.hours {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: .125rem .25rem;
+    font-size: 80%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     text-align: end;
+    gap: .25rem;
 }
 
 .logo {

@@ -4,11 +4,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* outline: 1px dotted blue; */
+  outline: 1px dotted blue;
 }
 
 :root {
-  --primary: rgb(147, 143, 143);
+  --primary: rgb(228, 222, 222);
   --secondary: rgb(142, 40, 40, .9);
   --tertiary: rgba(38, 38, 41, 0.9);
   --overlay: rgba(43, 28, 28, 0.65);
@@ -27,6 +27,7 @@
 
 main {
   flex-grow: 1;
+  padding: .5rem .25rem;
 }
 
 .link {
